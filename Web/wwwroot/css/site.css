@@ -1,0 +1,68 @@
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+}
+html{
+  height: 100%;
+}
+body{
+  background-color: #161b1d;
+  height: 100%;
+}
+.cards{
+  background-color: #373e46;
+}
+
+.searchContainer
+{
+  padding:10px;
+  margin-top: 20px;
+}
+.topRow{
+  margin:auto;
+  height: 100%;
+}
+
+.card.container-fluid
+{
+  background-color: #b1b0a0;
+  border-radius:   10px;
+  margin: 10px 5px;
+  padding-top: 15px;
+  
+}
+.card.container-fluid:hover{
+  cursor:pointer;
+}
+
+.card.container-fluid > .title{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 30px;
+}
+
+.selectedCard
+{
+  color: #b1b0a0;
+  padding: 40px;
+}
+.selectedCard > img{
+  width: 100%;
+}
+.selectedCard .route
+{
+  display: inline-block;
+}
+.selectedCard .glyphicon-star-empty
+{
+  font-size: 3em;
+  margin-left: 30px;
+}
+.selectedCard .glyphicon-star-empty:hover{
+  cursor: pointer;
+}
+
+.favorites header{
+  color: #b1b0a0;
+  border-bottom: solid 5px #b1b0a0;
+}

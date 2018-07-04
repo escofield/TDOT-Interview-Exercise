@@ -1,0 +1,32 @@
+{
+    "version": "0.1.0",
+    "command": "dotnet",
+    "isShellCommand": true,
+    "args": [],
+    "tasks": [
+        {
+            "command": "coffee.cmd",
+            "taskName": "transpile-Coffeescript",
+            "isBuildCommand": false,
+            "showOutput": "always",
+            "isBackground": true,
+            "args": ["-o", "wwwroot/js/", "-c", "coffee/"]
+        },        
+        {
+            "taskName": "build",
+            "args": [
+                "${workspaceRoot}/web.csproj"
+            ],
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "transpile-TypeScript",
+            "command": "tsc",
+            "isShellCommand": true,
+            "args": ["-p", "."],
+            "showOutput": "always",
+            "problemMatcher": "$tsc"
+        }
+    ]
+}

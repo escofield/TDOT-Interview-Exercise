@@ -1,0 +1,8 @@
+c:\Users\escof\Google Drive\projects\TDOT\Web\bin\Debug\netcoreapp1.1\web.deps.json
+c:\Users\escof\Google Drive\projects\TDOT\Web\bin\Debug\netcoreapp1.1\web.runtimeconfig.json
+c:\Users\escof\Google Drive\projects\TDOT\Web\bin\Debug\netcoreapp1.1\web.runtimeconfig.dev.json
+c:\Users\escof\Google Drive\projects\TDOT\Web\bin\Debug\netcoreapp1.1\web.dll
+c:\Users\escof\Google Drive\projects\TDOT\Web\bin\Debug\netcoreapp1.1\web.pdb
+c:\Users\escof\Google Drive\projects\TDOT\Web\obj\Debug\netcoreapp1.1\web.AssemblyInfo.cs
+c:\Users\escof\Google Drive\projects\TDOT\Web\obj\Debug\netcoreapp1.1\web.dll
+c:\Users\escof\Google Drive\projects\TDOT\Web\obj\Debug\netcoreapp1.1\web.pdb

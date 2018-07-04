@@ -1,0 +1,43 @@
+<div class="row topRow">
+    <div class="col-md-5">
+        <div class="container-fluid selectedCard" >
+            <img src="{{selectedRoadways.thumbnailUrl}}" class="thumbnail img-responsive" onerror="this.src='/images/blank.png'">
+            <h2 class="title">{{selectedRoadways.title}}</h2>
+            <div class="pull-right">
+                <div>
+                    <h1 class="route">{{selectedRoadways.route}}</h1>
+                    <span class="glyphicon glyphicon-star-empty" (click)="onFavorite($event)"></span>
+                </div>
+            </div>
+            <h2 class="pull-left">{{selectedRoadways.jurisdiction}}</h2>
+        </div>
+        <div class="favorites">
+            <header><h1>Favorites</h1></header>
+            <div class="roadwayGrid" *ngFor="let rway of favorites" (click)="onSelect($event,rway)">
+                <div class="col-md-6">
+                    <div class="container-fluid card" >
+                        <img src="{{rway.thumbnailUrl}}" class="thumbnail img-responsive">
+                        <h5 class="title">{{rway.title}}</h5>
+                        <h4 class="route pull-right">{{rway.route}}</h4>
+                        <h5 class="pull-left">{{rway.jurisdiction}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7 cards">
+        <div class="searchContainer">
+            <input type="text" [ngModel]="textValue" (ngModelChange)="onFilter($event)" class="form-control input-lg" placeholder="Search for a camera..."> 
+        </div>
+        <div class="roadwayGrid" *ngFor="let rway of roadways" (click)="onSelect($event,rway)">
+            <div class="col-md-4">
+                <div class="container-fluid card" >
+                    <img src="{{rway.thumbnailUrl}}" class="thumbnail img-responsive">
+                    <h5 class="title">{{rway.title}}</h5>
+                    <h4 class="route pull-right">{{rway.route}}</h4>
+                    <h5 class="pull-left">{{rway.jurisdiction}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
